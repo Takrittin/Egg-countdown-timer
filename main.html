@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egg Timer By Tobby and friends</title>
+    <style>
+        h1 {
+            font-size: 85px;
+            text-align: center;
+
+            background-image: linear-gradient(45deg, #FF5733, #FF33E9, #3333FF, #33FF68, #FFFF33);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: antiquewhite;
+            animation: moveImage 2s infinite alternate
+        }
+        h4 {
+            text-align: center;
+            font-size: 30px;
+            color: antiquewhite;
+            transition: transform 0.2s, color 0.2s, text-shadow 0.2s;
+            margin: 10px 0;
+            border: none;
+            animation: moveImage 2s infinite alternate
+            
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .image-container a {
+            text-decoration: none;
+            margin: 10px;
+            animation: moveImage 2s infinite alternate
+        }
+        @keyframes moveImage {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(-10px); /* เคลื่อนซ้ายเล็กน้อย */
+            }
+            100% {
+                transform: translateX(0);
+            }/* sawadee krap*/
+    
+        }
+        .image-container img {
+            width: 350px;
+            height: 350px;
+            border: 15px solid #a77e1d; /* Add border to the images */
+            border-radius: 12px;
+            display: block;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        .image-container img:hover {
+            transform: scale(1.1) rotate(10deg);
+        }
+        h4:hover {
+            color: orange;
+            transform: scale(1.1);
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        img {
+            width: 350px;
+            height: 350px;
+            border-radius: 20px;
+        }
+        body {
+            background-color: wheat;
+            background-image: url(https://images.hdqwalls.com/download/eagle-landscape-mountains-minimalist-ez-1920x1080.jpg);
+            background-size: cover;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Egg Timer Countdown</h1>
+    <h4>By Tobby and friends</h4>
+    <br>
+    </a>
+    <br>
+    <br>
+    <div class="image-container">
+        <a href="./time6mins.html">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/poached-egg-1597080388.jpg?crop=0.753xw:1.00xh;0.198xw,0&resize=1200:*" alt="">
+            <h4>Runny Yolk(6 mins)</h4>
+        </a>
+        <a href="./time8mins.html">
+            <img src="https://www.seriouseats.com/thmb/DJk71-nF3YyxGlpoIGnvlgF57Z4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/perfect-soft-boiled-eggs-hero-05_1-7680c13e853046fd90db9e277911e4e8.JPG" alt="">
+            <h4>Soft Boiled(8 mins)</h4>
+        </a>
+        <a href="./time10mins.html">
+            <img src="https://www.seriouseats.com/thmb/Mzkc2-5ELWaYFv7XhhbHZMYukXU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/steamed-hard-boiled-egg-hero-b19792d9bf7344978dd043e6a8f9c074.JPG" alt="">
+            <h4>Hard Boiled(10 mins)</h4>
+        </a>
+        <a href="./time15mins.html">
+            <img src="https://northernnester.com/wp-content/uploads/2023/01/will-overcooked-hard-boiled-eggs-hurt-you.jpg" alt="">
+            <h4>Over Cooked(15 mins)</h4>
+        </a>
+    </div>
+</body>
+</html>
